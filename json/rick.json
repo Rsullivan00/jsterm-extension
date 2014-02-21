@@ -1,0 +1,84 @@
+{
+   "name": "~",
+   "type": "dir",
+   "contents": [
+      {
+         "name": "README",
+         "type": "text",
+         "contents": "Hi, I'm Rick Sullivan. I'm a student and programmer. Check out my <a class='exec' href='http://github.com/Rsullivan00' target='_blank'>Github</a> account and <a class='exec' href='http://ricksullivan.net/resume' target='_blank'>resume</a> or send me an email at <a class='exec' href='mailto:rick@ricksullivan.net'>rick@ricksullivan.net</a>. \n\nI am looking for a Software development internship over this summer, so send me a message if you think I would fit at your company.",
+         "description": ""
+      },
+      {
+         "name": "resume",
+         "type": "exec",
+         "contents": "//ricksullivan.net/resume"
+      },
+      {
+         "name": "pic.jpg",
+         "type": "img",
+         "contents": "/images/selfie.JPG",
+         "caption": "Yo it's me."
+      },
+      {
+         "name": "Courses",
+         "type": "dir",
+         "contents": [
+            {
+                "name": "Compilers",
+                "type": "exec",
+                "contents": "//github.com/Rsullivan00/Compilers/",
+                "description": "See my coursework for my compilers class. I am writing a compiler for a subset of the C language."
+            },
+            {
+                "name": "Programming Languages",
+                "type": "exec",
+                "contents": "//github.com/Rsullivan00/Programming-Languages/",
+                "description": "See my coursework for my programming languages class."
+            },
+            {
+                "name": "Algorithms",
+                "type": "exec",
+                "contents": "//github.com/Rsullivan00/Algorithms/",
+                "description": "See my coursework for my algorithms class."
+            },
+            {
+                "name": "Data Structures",
+                "type": "exec",
+                "contents": "//github.com/Rsullivan00/Data-Structures/",
+                "description": "See my coursework for my data structure class."
+            },
+            {
+                "name": "Embedded Systems",
+                "type": "exec",
+                "contents": "//github.com/Rsullivan00/Embedded-Systems/",
+                "description": "See my coursework for my embedded systems class."
+            }
+         ]
+
+
+      },
+      {
+         "name": "Projects",
+         "type": "dir",
+         "contents": [
+            {
+               "name": "file2",
+               "type": "text",
+               "contents": "foo"
+            },
+            {
+               "name": "foo",
+               "type": "dir",
+               "contents": [
+                  {
+                     "name": "file3",
+                     "type": "exec",
+                     "contents": "http://google.com",
+                     "description": "blahblah"
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}
