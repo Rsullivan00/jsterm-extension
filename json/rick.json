@@ -20,6 +20,13 @@
          "caption": "Yo it's me."
       },
       {
+         "name": "Github commits",
+         "type": "exec",
+         "contents": "#",
+         "caption": "See a feed of my recent Github commits."
+      },
+
+      {
          "name": "Courses",
          "type": "dir",
          "contents": [
@@ -62,21 +69,16 @@
          "type": "dir",
          "contents": [
             {
-               "name": "file2",
-               "type": "text",
-               "contents": "foo"
+               "name": "Project Euler",
+               "type": "exec",
+               "contents": "//github.com/Rsullivan00/Project-Euler",
+               "description": "See my solutions to some Project Euler questions."
             },
             {
-               "name": "foo",
-               "type": "dir",
-               "contents": [
-                  {
-                     "name": "file3",
-                     "type": "exec",
-                     "contents": "http://google.com",
-                     "description": "blahblah"
-                  }
-               ]
+               "name": "Too Many Friends",
+               "type": "exec",
+               "contents": "//github.com/phegstrom/FBFriendRemover",
+               "description": "In-progress Facebook friend remover. Suggests friends to remove by ranking friends based on how much you choose to interact with them."
             }
          ]
       }

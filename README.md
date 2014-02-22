@@ -1,3 +1,6 @@
+# jsterm-extension
+Building a personal website using Clark Duvall's jsterm project. You can find the original repo at https://github.com/clarkduvall/jsterm. 
+
 # jsterm
 jsterm is a terminal simulator that uses a JSON filesystem. To see it in use,
 check out [clarkduvall.com](http://clarkduvall.com).
