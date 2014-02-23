@@ -5,13 +5,13 @@
       {
          "name": "README",
          "type": "text",
-         "contents": "Hi, I'm Rick Sullivan. I'm a student and programmer. Check out my <a class='exec' href='http://github.com/Rsullivan00' target='_blank'>Github</a> account and <a class='exec' href='http://ricksullivan.net/resume' target='_blank'>resume</a> or send me an email at <a class='exec' href='mailto:rick@ricksullivan.net'>rick@ricksullivan.net</a>. \n\nI am looking for a Software development internship over this summer, so send me a message if you think I would fit at your company.",
+         "contents": "Hi, I'm Rick Sullivan. I'm a student and programmer. Check out my <a class='exec' href='http://github.com/Rsullivan00' target='_blank'>Github</a> account and <a class='exec' href='images/resume.pdf' target='_blank'>resume</a> or send me an email at <a class='exec' href='mailto:rick@ricksullivan.net'>rick@ricksullivan.net</a>. \n\nI am looking for a Software development internship over this summer, so send me a message if you think I would fit at your company.",
          "description": ""
       },
       {
          "name": "resume",
          "type": "exec",
-         "contents": "//ricksullivan.net/resume"
+         "contents": "/images/resume.pdf"
       },
       {
          "name": "pic.jpg",
@@ -19,13 +19,6 @@
          "contents": "/images/selfie.JPG",
          "caption": "Yo it's me."
       },
-      {
-         "name": "Github commits",
-         "type": "exec",
-         "contents": "#",
-         "caption": "See a feed of my recent Github commits."
-      },
-
       {
          "name": "Courses",
          "type": "dir",
