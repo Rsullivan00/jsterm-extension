@@ -1,3 +1,49 @@
+/*
+	ICONS
+*/ 
+.icons {
+	position: fixed;
+	right: 0;
+	z-index: 50;
+	top: 175px;
+}
+
+.icons ul li {
+	list-style-type: none;
+	margin-bottom: 8px;
+}
+
+@media (max-width: 964px) {
+    .icons {
+        visibility: hidden
+    }
+}
+
+[class^="icon-"] {
+	width: 64px;
+	height: 64px;
+}
+
+[class^="icon-"]:hover {
+	opacity: 0.9;
+}
+
+.icon-email {
+	background-color: #FF9900;
+}
+
+.icon-facebook {
+	background-color: #3B5998;
+}
+
+.icon-linkedin {
+	background-color: #007FB1;
+}
+
+.icon-github {
+	background-color: #FFF;
+}
+
 // Copyright 2013 Clark DuVall
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +79,7 @@ div.jsterm {
    font-family: monospace;
    font-size: 16px;
    color: #E0E0E0;
-   width: 900px;
+   max-width: 900px;
    margin-bottom: 20px;
    white-space: pre-wrap;
 }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		  function filterPath(string) {
+		    return string
+		      .replace(/^\//,'')
+		      .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+		      .replace(/\/$/,'');
+		  }
+		  $('a[href*=#]').each(function() {
+		    if ( filterPath(location.pathname) == filterPath(this.pathname)
+		    && location.hostname == this.hostname
+		    && this.hash.replace(/#/,'') ) {
+		      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+		      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+		       if ($target) {
+		         var targetOffset = $target.offset().top;
+		         $(this).click(function(event) {
+		           event.preventDefault();
+		           $('html, body').animate({scrollTop: targetOffset}, 1000);
+		           var d = document.createElement("div");
+		        d.style.height = "101%";
+		        d.style.overflow = "hidden";
+		        document.body.appendChild(d);
+		        window.scrollTo(0,scrollToM);
+		        setTimeout(function() {
+		        d.parentNode.removeChild(d);
+		            }, 10);
+		           return false;
+		         });
+		      }
+		    }
+		  });
+		});
+		/*! Smooth Scroll - v1.4.5 - 2012-07-22
+		* Copyright (c) 2012 Karl Swedberg; Licensed MIT, GPL */
+	</script>
+	<link href="css/styles.css" rel="stylesheet">
+	<body>
+		<header id="nav">
+			<h1 class="home"><a href="#home">Rick Sullivan</a></h1>
+			<ul>
+		         <li><a href="#about">About</a></li>
+		         <li><a href="#projects">Projects</a></li>
+		         <li><a href="#contact">Contact</a></li>
+		     </ul>
+		     <div class="clearfix">&nbsp;</div>
+		</header>
+
+		<div class="icons">
+			<ul>
+				<li><a href="mailto:rick@ricksullivan.net" target="_top"><img class="icon-email" src="../img/icons/email-64.png"></a></li>
+				<li><a href="//github.com/Rsullivan00"><img class="icon-github" src="../img/icons/github-64.png" ></a></li>
+				<li><a href="//www.linkedin.com/in/rsullivan00"><img class="icon-linkedin" src="../img/icons/linkedin-64.png"></a></li>
+				<li><a href="//www.facebook.com/rick.sullivan.10485"><img class="icon-facebook" src="img/icons/facebook-64.png"></a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<a id="home"></a>
+			<div id="page1">
+			  <a id="about"></a>
+			  <div class="spacer"></div>
+			  <div class="pageContent">
+			    <h1 class="pageHeader">Dope website</h1>
+			  </div>
+			</div>
+
+			<div id="page2">
+			  <a id="projects"></a>
+			  <div class="spacer"></div>
+			  <div class="pageContent">
+			    <h1 class="pageHeader">My current projects</h1>
+			  </div>
+			</div>
+			<div id="page3">
+			  <a id="contact"></a>
+			  <div class="spacer"></div>
+			  <div class="pageContent">
+			    <h1 class="pageHeader">Contact me</h1>
+			  </div>
+			</div>	
+		</div>
+	</body>
+</html>

@@ -1,0 +1,162 @@
+html {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: bold;
+	background-color: #333;
+}
+
+body {
+
+}
+
+.pageContent {
+}
+
+.pageHeader {
+	margin-top: 50px;
+	text-align: center;
+	font-size: 60px;
+}
+.spacer {
+	height: 50px;
+}
+#page1, #page2, #page3 {
+	height:100vh;
+
+}
+
+#page1 {
+	background: #28afca; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #28afca 0%, #3cd0e0 39%, #51d3df 59%, #96e7ec 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#28afca), color-stop(39%,#3cd0e0), color-stop(59%,#51d3df), color-stop(100%,#96e7ec)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  #28afca 0%,#3cd0e0 39%,#51d3df 59%,#96e7ec 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  #28afca 0%,#3cd0e0 39%,#51d3df 59%,#96e7ec 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  #28afca 0%,#3cd0e0 39%,#51d3df 59%,#96e7ec 100%); /* IE10+ */
+background: linear-gradient(135deg,  #28afca 0%,#3cd0e0 39%,#51d3df 59%,#96e7ec 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28afca', endColorstr='#96e7ec',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#page2 {
+background: #d5efa9; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #d5efa9 0%, #b8e470 41%, #afe55f 61%, #96da48 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#d5efa9), color-stop(41%,#b8e470), color-stop(61%,#afe55f), color-stop(100%,#96da48)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  #d5efa9 0%,#b8e470 41%,#afe55f 61%,#96da48 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  #d5efa9 0%,#b8e470 41%,#afe55f 61%,#96da48 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  #d5efa9 0%,#b8e470 41%,#afe55f 61%,#96da48 100%); /* IE10+ */
+background: linear-gradient(135deg,  #d5efa9 0%,#b8e470 41%,#afe55f 61%,#96da48 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5efa9', endColorstr='#96da48',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#page3 {
+background: #e99953; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #e99953 0%, #efa06b 39%, #efa679 59%, #f5c9af 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#e99953), color-stop(39%,#efa06b), color-stop(59%,#efa679), color-stop(100%,#f5c9af)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  #e99953 0%,#efa06b 39%,#efa679 59%,#f5c9af 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  #e99953 0%,#efa06b 39%,#efa679 59%,#f5c9af 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  #e99953 0%,#efa06b 39%,#efa679 59%,#f5c9af 100%); /* IE10+ */
+background: linear-gradient(135deg,  #e99953 0%,#efa06b 39%,#efa679 59%,#f5c9af 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e99953', endColorstr='#f5c9af',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+/*
+	HEADER/NAV
+*/
+header {
+	height: 50px;
+	line-height: 50px;
+	background-color: #333;
+	color: #FFF;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+
+header h1 {
+	width: 300px;
+	float: left;
+	line-height: 50px;
+	font-size: 1em;
+	text-indent: 25px;
+}
+
+.home a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+header ul {
+	list-style: none;
+	margin: 0 175px 0 0;
+	float: right;
+}
+
+header ul li {
+	float: left;
+	margin-left: 15px;
+	line-height: 50px;
+}
+
+header ul li a {
+	text-decoration: none;
+}
+
+header ul li a:hover {
+	text-decoration: underline;
+}
+
+header ul li:nth-child(1) a {
+	color: #20AEFD;
+}
+
+header ul li:nth-child(2) a {
+	color: #A9FF4C;
+}
+
+header ul li:nth-child(3) a {
+	color: #FFB32D;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*
+	ICONS
+*/ 
+.icons {
+	position: fixed;
+	right: 0;
+	z-index: 50;
+	top: 175px;
+}
+
+.icons ul li {
+	list-style-type: none;
+	margin-bottom: 8px;
+}
+
+[class^="icon-"] {
+	width: 64px;
+	height: 64px;
+}
+
+[class^="icon-"]:hover {
+	opacity: 0.9;
+}
+
+.icon-email {
+	background-color: #FF9900;
+}
+
+.icon-facebook {
+	background-color: #3B5998;
+}
+
+.icon-linkedin {
+	background-color: #007FB1;
+}
+
+.icon-github {
+	background-color: #000;
+}
