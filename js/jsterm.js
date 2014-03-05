@@ -412,7 +412,7 @@
         var element = this.div.querySelector(query);
 
         if (element)
-           element.setAttribute('onclick', 'this.focus();');
+           element.setAttribute('onclick', onclick);
       },
 
       _typeKey: function(key) {
