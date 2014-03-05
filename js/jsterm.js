@@ -354,6 +354,7 @@
                blinker.innerHTML = '&#x2588';
                stdout.parentNode.appendChild(blinker);
             }
+
          }
 
          if (timeout) {
@@ -375,6 +376,7 @@
              prompt = document.createElement('span'),
              command = document.createElement('span');
 
+         this._removeOnClick('#currentPrompt');
          this._resetID('#currentPrompt');
          this.div.appendChild(div);
 
@@ -389,6 +391,21 @@
          div.appendChild(command);
          this._toggleBlinker(0);
          this.scroll();
+         this._setOnClick('#currentPrompt', 'this.focus();');
+      },
+
+        _removeOnClick: function(query) {
+         var element = this.div.querySelector(query);
+
+         if (element)
+            element.removeAttribute('onclick');
+      },
+
+      _setOnClick: function(query, onclick) {
+        var element = this.div.querySelector(query);
+
+        if (element)
+           element.setAttribute('onclick', 'this.focus();');
       },
 
       _typeKey: function(key) {
