@@ -373,12 +373,13 @@
 
       _prompt: function() {
          var div = document.createElement('div'),
-             prompt = document.createElement('span'),
+             prompt = document.createElement('a'),
              command = document.createElement('span');
 
          this._removeOnClick('#currentPrompt');
          this._resetID('#currentPrompt');
          this.div.appendChild(div);
+         prompt.setAttribute('href', 'javascript:void(0)');
 
          prompt.classList.add('prompt');
          prompt.id = 'currentPrompt';
@@ -391,7 +392,7 @@
          div.appendChild(command);
          this._toggleBlinker(0);
          this.scroll();
-         this._setOnClick('#currentPrompt', 'focusCurrentPrompt();');
+         this._setOnClick('#currentPrompt', 'focusCurrentPrompt()');
       },
 
       focusCurrentPrompt: function () {
@@ -523,5 +524,9 @@
 
    window.typeCommand = function(command) {
       term.typeCommand(command);
+   };
+
+   window.focusCurrentPrompt = function() {
+      term.focusCurrentPrompt();
    };
 })();
