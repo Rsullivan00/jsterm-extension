@@ -391,10 +391,17 @@
          div.appendChild(command);
          this._toggleBlinker(0);
          this.scroll();
-         this._setOnClick('#currentPrompt', 'this.focus();');
+         this._setOnClick('#currentPrompt', 'focusCurrentPrompt();');
       },
 
-        _removeOnClick: function(query) {
+      focusCurrentPrompt: function () {
+          var element = this.div.querySelector('#currentPrompt');
+
+         if (element)
+            element.focus();
+      },
+        
+       _removeOnClick: function(query) {
          var element = this.div.querySelector(query);
 
          if (element)
