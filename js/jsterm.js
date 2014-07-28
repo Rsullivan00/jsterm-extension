@@ -88,12 +88,32 @@
       loadConfig: function(config) {
          this.config = config;
       },
+      
+      isOldIE: function() {
+         function hasClass(element, cls) {
+             return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+         };
+         
+         // Detecting IE
+         var ies = ['.ie6', '.ie7', '.ie8'];
+         ies.forEach(function(ie) {
+            if (hasClass(document.querySelector('html'), ie)) {
+               return true;
+            }
+         });
+         
+         return false;
+      },
 
       begin: function(element) {
          var parentElement = element || document.body;
 
          this.div = document.createElement('div');
-         this.div.classList.add('jsterm');
+         if (this.isOldIE()) {
+            this.div.className += ' jsterm';
+         } else {
+            this.div.classList.add('jsterm');
+         }
          parentElement.appendChild(this.div);
 
          window.onkeydown = function(e) {
@@ -380,13 +400,21 @@
          this._resetID('#currentPrompt');
          this.div.appendChild(div);
 
-         prompt.classList.add('prompt');
+         if (this.isOldIE()) {
+            prompt.className += ' prompt';
+         } else {
+            prompt.classList.add('prompt');
+         }
          prompt.id = 'currentPrompt';
          prompt.innerHTML = this.config.prompt(this.getCWD(), this.config.username);
          div.appendChild(prompt);
 
          this._resetID('#stdout');
-         command.classList.add('command');
+         if (this.isOldIE()) {
+            command.className += ' command';
+         } else {
+            command.classList.add('command');
+         }
          command.id = 'stdout';
          div.appendChild(command);
          this._toggleBlinker(0);
