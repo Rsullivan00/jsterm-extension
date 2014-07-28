@@ -95,7 +95,7 @@
          };
          
          // Detecting IE
-         var ies = ['ie6', 'ie7', 'ie8'];
+         var ies = ['ie6', 'ie7', 'ie8', 'ie9'];
          ies.forEach(function(ie) {
             if (hasClass(document.querySelector('html'), ie)) {
                return true;
