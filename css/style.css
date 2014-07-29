@@ -13,6 +13,10 @@
 	margin-bottom: 8px;
 }
 
+.icons ul li a img {
+	border: none;
+}
+
 @media (max-width: 964px) {
     .icons {
         visibility: hidden
