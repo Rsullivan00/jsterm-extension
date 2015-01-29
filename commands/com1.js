@@ -133,9 +133,10 @@ COMMANDS.sudo = function(argv, cb) {
    this._terminal.returnHandler = function() {
        var password = this.stdout().innerHTML;
        if (this.config.username === "root" || password === "hunter2") {
+         if (argv.length === 0)
+             cb();
          for (var i in argv)
              this._execute(argv[i]);
-         cb();
        } else if (++count < 3) {
          this.write('<br/>Sorry, try again.<br/>');
          this.write('[sudo] password for ' + this.config.username + ': ');
