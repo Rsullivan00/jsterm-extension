@@ -131,7 +131,12 @@ COMMANDS.clear = function(argv, cb) {
 COMMANDS.sudo = function(argv, cb) {
    var count = 0;
    this._terminal.returnHandler = function() {
-      if (++count < 3) {
+       var password = this.stdout().innerHTML;
+       if (this.config.username === "root" || password === "hunter2") {
+         for (var i in argv)
+             this._execute(argv[i]);
+         cb();
+       } else if (++count < 3) {
          this.write('<br/>Sorry, try again.<br/>');
          this.write('[sudo] password for ' + this.config.username + ': ');
          this.scroll();
@@ -141,6 +146,7 @@ COMMANDS.sudo = function(argv, cb) {
       }
    }.bind(this._terminal);
    this._terminal.write('[sudo] password for ' + this._terminal.config.username + ': ');
+   this._terminal.newStdout();
    this._terminal.scroll();
 }
 
@@ -202,6 +208,25 @@ COMMANDS.help = function(argv, cb) {
    for (var c in this._terminal.commands) {
       if (this._terminal.commands.hasOwnProperty(c) && !c.startswith('_'))
          this._terminal.write(c + '  ');
+   }
+   cb();
+}
+
+COMMANDS.rm = function(argv, cb) {
+   var result = this._terminal.parseArgs(argv),
+       args = result.args,
+       filename = result.filenames[0],
+      entry = this._terminal.getEntry(filename),
+       dirStr,
+       e;
+
+   if (!entry)
+      this._terminal.write('rm: cannot access ' + filename + ': No such file or directory');
+   else if (entry.type == 'dir') {
+      if (args.indexOf('r') > -1 && args.indexOf('f') > -1 && entry.name === "~") {
+          this._terminal.write("Nice try :)");
+      }
+   } else {
    }
    cb();
 }
