@@ -5,7 +5,7 @@
       {
          "name": "README",
          "type": "text",
-         "contents": "Hi, I'm Rick Sullivan. I'm a student and programmer working as a Business and System Integration Analyst at Accenture. This summer, I am doing consulting work for Cisco in Milpitas, CA. Check out my <a class='exec' href='http://github.com/Rsullivan00' target='_blank'>Github</a> account and <a class='exec' href='images/resume.pdf' target='_blank'>resume</a> or send me an email at <a class='exec' href='mailto:rick@ricksullivan.net'>rick@ricksullivan.net</a>.",
+         "contents": "Hi, I'm Rick Sullivan. I have a passion for computers, web applications, and math. I'm about to graduate from Santa Clara University in June 2015 with a major in Computer Science and Engineering and a Mathematics minor. Check out my <a class='exec' href='http://github.com/Rsullivan00' target='_blank'>Github</a> account and <a class='exec' href='images/resume.pdf' target='_blank'>resume</a> or send me an email at <a class='exec' href='mailto:rick@ricksullivan.net'>rick@ricksullivan.net</a>.",
          "description": ""
       },
       {
@@ -30,6 +30,12 @@
          "type": "dir",
          "contents": [
             {
+                "name": "Operating Systems",
+                "type": "exec",
+                "contents": "//github.com/Rsullivan00/OperatingSystems/",
+                "description": "My Operating Systems classwork takes a look into the Minix kernel."
+            },
+            {
                 "name": "Compilers",
                 "type": "exec",
                 "contents": "//github.com/Rsullivan00/Compilers/",
@@ -39,7 +45,7 @@
                 "name": "Programming Languages",
                 "type": "exec",
                 "contents": "//github.com/Rsullivan00/Programming-Languages/",
-                "description": "See my coursework for my programming languages class."
+                "description": "My programming languages class approaches problems from various programming paradigms."
             },
             {
                 "name": "Algorithms",
@@ -51,7 +57,7 @@
                 "name": "Data Structures",
                 "type": "exec",
                 "contents": "//github.com/Rsullivan00/Data-Structures/",
-                "description": "See my coursework for my data structure class."
+                "description": "See my coursework for my data structures class."
             },
             {
                 "name": "Embedded Systems",
@@ -68,6 +74,18 @@
          "type": "dir",
          "contents": [
             {
+               "name": "Label Reader",
+               "type": "exec",
+               "contents": "//github.com/phegstrom/labelRecognizer",
+               "description": "My undergraduate thesis project. We are processing images of USDA nutrition labels, using computer vision and domain knowledge to accurately extract data for use in applications. Scheduled for completion in May 2015."
+            },
+            {
+               "name": "SCU Transcript",
+               "type": "exec",
+               "contents": "//github.com/phegstrom/transcript-to-latex",
+               "description": "A side project to format web transcripts downloaded from the eCampus website. Unofficial transcripts are almost illegible plain text; this app builds and compiles a LaTeX pdf document based on the given plaintext."
+            },
+            {
                "name": "Project Euler",
                "type": "exec",
                "contents": "//github.com/Rsullivan00/Project-Euler",
@@ -77,7 +95,7 @@
                "name": "Too Many Friends",
                "type": "exec",
                "contents": "//github.com/phegstrom/FBFriendRemover",
-               "description": "In-progress Facebook friend remover. Suggests friends to remove by ranking friends based on how much you choose to interact with them."
+               "description": "Facebook friend remover. Suggests friends to remove by ranking friends based on how much you choose to interact with them. Was begun before realizing that FB removed from their API the ability to delete friends...always double check documentation, people."
             }
          ]
       }
