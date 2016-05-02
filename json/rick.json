@@ -5,7 +5,7 @@
       {
          "name": "README",
          "type": "text",
-         "contents": "Hi, I'm Rick Sullivan. I have a passion for computers, web applications, and math. I'm about to graduate from Santa Clara University in June 2015 with a major in Computer Science and Engineering and a Mathematics minor. Check out my <a class='exec' href='http://github.com/Rsullivan00' target='_blank'>Github</a> account and <a class='exec' href='images/resume.pdf' target='_blank'>resume</a> or send me an email at <a class='exec' href='mailto:rick@ricksullivan.net'>rick@ricksullivan.net</a>.",
+         "contents": "Hi, I'm Rick Sullivan. I have a passion for computers, web applications, and math. I graduated from Santa Clara University in June 2015 with a major in Computer Science and Engineering and a Mathematics minor. Check out my <a class='exec' href='http://github.com/Rsullivan00' target='_blank'>Github</a> account and <a class='exec' href='images/resume.pdf' target='_blank'>resume</a> or send me an email at <a class='exec' href='mailto:rick@ricksullivan.net'>rick@ricksullivan.net</a>.",
          "description": ""
       },
       {
@@ -17,13 +17,13 @@
          "name": "pic.jpg",
          "type": "img",
          "contents": "/images/momAndMe.jpg",
-         "caption": "Me with a lovely lady."
+         "caption": "Me with the madre."
       },
       {
          "name": "alhambra.jpg",
          "type": "img",
          "contents": "/images/alhambra.jpg",
-         "caption": "I spent fall quarter studying in Spain. I had the time of my life and met some awesome people. Here's the view from the Generalife above the Alhambra in Granada."
+         "caption": "I spent a quarter studying in Spain. I had the time of my life and met some awesome people. Here's the view from the Generalife above the Alhambra in Granada."
       },
       {
          "name": "Courses",
@@ -73,22 +73,22 @@
          "type": "dir",
          "contents": [
             {
+               "name": "Label Reader",
+               "type": "exec",
+               "contents": "//github.com/Rsullivan00/labelRecognizer",
+               "description": "My undergraduate thesis project, which won best in group as decided by industry judges. We process images of USDA nutrition labels, using computer vision and domain knowledge to accurately extract data for use in applications. Completed in May 2015."
+            },
+            {
                "name": "Schedule Suggester",
                "type": "exec",
                "contents": "//rsullivan00.github.io/ScheduleSuggester/",
                "description": "Builds a custom year schedule for Computer Engineering or Web Design majors at Santa Clara. Accounts for AP and other credit students bring. See the <a class='exec' href='//github.com/Rsullivan00/schedulesuggester' target='_blank'>code</a> or the <a class='exec' href='//rsullivan00.github.io/ScheduleSuggester' target='_blank'>site</a>."
             },
             {
-               "name": "Label Reader",
-               "type": "exec",
-               "contents": "//github.com/Rsullivan00/labelRecognizer",
-               "description": "My undergraduate thesis project. We are processing images of USDA nutrition labels, using computer vision and domain knowledge to accurately extract data for use in applications. Scheduled for completion in May 2015."
-            },
-            {
                "name": "SCU Transcript",
                "type": "exec",
                "contents": "//github.com/Rsullivan00/transcript-to-latex",
-               "description": "A side project to format web transcripts downloaded from the eCampus website. Unofficial transcripts are almost illegible plain text; this app builds and compiles a LaTeX pdf document based on the given plaintext."
+               "description": "A side project to format web transcripts downloaded from the eCampus website. Unofficial transcripts are plain text with formatting with tabs and spaces. When copied into Word, formatting is completely mangled; this app builds and compiles a LaTeX pdf document based on the given plain text."
             },
             {
                "name": "Project Euler",
