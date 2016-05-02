@@ -36,12 +36,6 @@
                 "description": "My Operating Systems classwork takes a look into the Minix kernel."
             },
             {
-                "name": "Compilers",
-                "type": "exec",
-                "contents": "//github.com/Rsullivan00/Compilers/",
-                "description": "See my coursework for my compilers class. I am writing a compiler for a subset of the C language."
-            },
-            {
                 "name": "Programming Languages",
                 "type": "exec",
                 "contents": "//github.com/Rsullivan00/Programming-Languages/",
