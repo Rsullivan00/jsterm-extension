@@ -26,7 +26,7 @@
          "caption": "I spent a quarter studying in Spain. I had the time of my life and met some awesome people. Here's the view from the Generalife above the Alhambra in Granada."
       },
       {
-         "name": "Courses",
+         "name": "Courses (click this for descriptions)",
          "type": "dir",
          "contents": [
             {
@@ -69,7 +69,7 @@
 
       },
       {
-         "name": "Projects",
+         "name": "Projects (click this for descriptions)",
          "type": "dir",
          "contents": [
             {
