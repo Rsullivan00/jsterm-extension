@@ -14,6 +14,11 @@
          "contents": "/images/resume.pdf"
       },
       {
+         "name": "blog",
+         "type": "exec",
+         "contents": "https://blog.ricksullivan.net"
+      },
+      {
          "name": "pic.jpg",
          "type": "img",
          "contents": "/images/momAndMe.jpg",
