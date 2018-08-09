@@ -12,6 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+function isBot() {
+  return /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent);
+}
+
 (function() {
    if (typeof Object.create !== 'function') {
       Object.create = function (o) {
@@ -62,6 +66,7 @@
          this._history = [];
          this._historyIndex = -1;
          this.loadConfig(config);
+         this.typeDelay = isBot() ? 0 : 100;
 
          if (commands)
             this.loadCommands(commands);
@@ -88,12 +93,12 @@
       loadConfig: function(config) {
          this.config = config;
       },
-      
+
       isOldIE: function() {
          function hasClass(element, cls) {
              return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
          };
-         
+
          // Detecting IE
          var oldIE = false;
          var ies = ['ie6', 'ie7', 'ie8', 'ie9'];
@@ -102,7 +107,7 @@
                oldIE = true;
             }
          });
-         
+
          return oldIE;
       },
 
@@ -202,7 +207,7 @@
                that._typeKey(command.charCodeAt(i));
                setTimeout(function() {
                   type(i + 1);
-               }, 100);
+               }, that.typeDelay);
             }
          })(0);
       },
@@ -422,7 +427,7 @@
          this.scroll();
          //this._setOnClick('#currentPrompt', 'focusCurrentPrompt()');
       },
-    
+
       /*
       focusCurrentPrompt: function () {
           var element = this.div.querySelector('#currentPrompt');
@@ -430,7 +435,7 @@
          if (element)
             element.focus();
       },
-        
+
        _removeOnClick: function(query) {
          var element = this.div.querySelector(query);
 
