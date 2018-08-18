@@ -16,7 +16,7 @@
       {
          "name": "blog",
          "type": "exec",
-         "contents": "https://blog.ricksullivan.net"
+         "contents": "https://ricksullivan.net"
       },
       {
          "name": "pic.jpg",
